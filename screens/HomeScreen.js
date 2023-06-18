@@ -2,8 +2,24 @@ import { StyleSheet, Text, View, SafeAreaView, Image,ScrollView } from "react-na
 import React ,{useContext} from "react";
 import FitnessCards from "../components/FitnessCards";
 import { FitnessItems } from "../Context";
-
+import Banner from "../components/Banner";
+// import Carousel from "react-native-snap-carousel";
 const HomeScreen = () => {
+
+  const handleRenderItem = ({ item }) => (
+    <View style={{  flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'white',
+      borderRadius: 10,
+      height: 200,
+      padding: 10,
+      marginHorizontal: 10,}}>
+      <Image source={item.image} style={{ width: 180,
+    height: 180,
+    borderRadius: 10,}} />
+    </View>
+  );
   const {
    
     minutes,
@@ -16,9 +32,9 @@ const HomeScreen = () => {
     <ScrollView style={{marginTop:40}}>
       <View
         style={{
-          backgroundColor: "#CD853F",
+          backgroundColor:"black",
           padding: 10,
-          height: 200,
+          height: "100%",
           width: "100%",
         }}
       >
@@ -84,17 +100,22 @@ const HomeScreen = () => {
         </View>
 
         <View style={{ justifyContent: "center", alignItems: "center" }}>
-          <Image
+          {/* <Image
             style={{
               width: "90%",
-              height: 120,
+              height: 220,
               marginTop: 20,
+
+              marginBottom:80,
               borderRadius: 7,
             }}
             source={{
-              uri: "https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_842,ar_1.2,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/sku-card-widget/gold2.png",
+              uri: "https://e0.pxfuel.com/wallpapers/278/38/desktop-wallpaper-fitness-girl-gym-hands-look-sport-iphone-8-7-6-6s-background-female-gym.jpg",
             }}
-          />
+          /> */}
+      <Banner/>
+
+          <Text style={{fontSize:34,color:'white'}}>Workouts</Text>
         </View>
         <FitnessCards/>
       </View>
@@ -102,6 +123,8 @@ const HomeScreen = () => {
   );
 };
 
+
 export default HomeScreen;
 
 const styles = StyleSheet.create({});
+
