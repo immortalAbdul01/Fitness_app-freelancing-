@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native'
 import React, { useEffect, useState } from 'react'
-import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View,ScrollView } from 'react-native'
 import { auth } from './../firebase'
 
 const LoginScreen = () => {
@@ -43,10 +43,12 @@ const LoginScreen = () => {
   }
 
   return (
+    <ScrollView>
     <KeyboardAvoidingView
       style={styles.container}
       behavior="padding"
     >
+
       <View style={styles.inputContainer}>
           <TextInput
             placeholder="Name"
@@ -74,7 +76,7 @@ const LoginScreen = () => {
         <TouchableOpacity
           onPress={handleLogin}
           style={styles.button}
-        >
+          >
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -85,6 +87,7 @@ const LoginScreen = () => {
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
+</ScrollView>
   )
 }
 
@@ -95,6 +98,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop:300
   },
   inputContainer: {
     width: '80%'
