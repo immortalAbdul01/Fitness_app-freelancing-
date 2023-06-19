@@ -1,8 +1,12 @@
+import FullBody from './../assets/full.jpg'
+import Abs from './../assets/abs.jpg'
+import Arm from './../assets/arm.jpg'
+import Chest from './../assets/chest.jpeg'
 export default [
   {
     id: "0",
     image:
-      "https://wallpapercave.com/wp/wp2483009.jpg",
+     FullBody,
     name: "FULL BODY",
     description: "7x4 CHALLENGE",
     excersises: [
@@ -48,7 +52,7 @@ export default [
   {
     id: "1",
     image:
-      "https://wallpapercave.com/wp/wp10634793.jpg",
+      Abs,
     name: "ABS BEGINNER",
     description: "7x4 CHALLENGE",
     excersises : [
@@ -87,7 +91,7 @@ export default [
   {
     id: "2",
     image:
-      "https://wallpaperset.com/w/full/c/1/4/459707.jpg",
+      Arm,
     name: "ARM BEGINNER",
     description: "7x4 CHALLENGE",
     excersises:[
@@ -139,7 +143,7 @@ export default [
   {
     id: "3",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5750d5129f72662d66448028/1473904971714-I9L1HSP85AN7TZU1VZID/image-asset.jpeg",
+      Chest,
     name: "CHEST BEGINNER",
     description: "7x4 CHALLENGE",
     excersises: [

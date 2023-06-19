@@ -28,7 +28,7 @@ const WorkOutScreen = () => {
       >
         <Image
           style={{ width: "100%", height: 170 }}
-          source={{ uri: route.params.image }}
+          source={route.params.image }
         />
 
         <Ionicons

@@ -21,7 +21,7 @@ const FitnessCards = () => {
         >
           <Image
             style={{ width: "95%", height: 140, borderRadius: 7 }}
-            source={{ uri: item.image }}
+            source={item.image }
           />
           <Text
             style={{

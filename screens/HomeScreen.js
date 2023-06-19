@@ -6,20 +6,7 @@ import Banner from "../components/Banner";
 // import Carousel from "react-native-snap-carousel";
 const HomeScreen = () => {
 
-  const handleRenderItem = ({ item }) => (
-    <View style={{  flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: 'white',
-      borderRadius: 10,
-      height: 200,
-      padding: 10,
-      marginHorizontal: 10,}}>
-      <Image source={item.image} style={{ width: 180,
-    height: 180,
-    borderRadius: 10,}} />
-    </View>
-  );
+ 
   const {
    
     minutes,
